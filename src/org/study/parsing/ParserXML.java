@@ -1,4 +1,4 @@
-package org.study;
+package org.study.parsing;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -11,6 +11,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.study.beans.Contatto;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -111,6 +112,7 @@ import org.w3c.dom.NodeList;
 		}
 
 		public static void main(String[] args) throws Exception {
+			
 			List<Contatto> contatti = getContattiFromFile("xml/rubrica.xml");
 			writeContattiInFile(contatti, "xml/rubrica-copia.xml");
 		}

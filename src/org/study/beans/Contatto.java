@@ -1,4 +1,4 @@
-package org.study;
+package org.study.beans;
 
 public class Contatto {
 
