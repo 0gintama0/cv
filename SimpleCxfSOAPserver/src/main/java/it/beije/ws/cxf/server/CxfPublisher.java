@@ -6,9 +6,9 @@ public class CxfPublisher {
 	
 	public static void main(String[] args) {
 		System.out.println("Starting Server");
-		Ciao service = new CiaoImpl();
+		Rubrica service = new RubricaImpl();
 		JaxWsServerFactoryBean factory = new JaxWsServerFactoryBean();
-		factory.setServiceClass(Ciao.class);
+		factory.setServiceClass(Rubrica.class);
 		factory.setAddress("http://localhost:8000/ciao");
 		factory.setServiceBean(service);
 		factory.create();

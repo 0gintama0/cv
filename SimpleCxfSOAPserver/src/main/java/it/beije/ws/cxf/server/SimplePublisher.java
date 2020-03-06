@@ -6,8 +6,8 @@ public class SimplePublisher {
 	
 	public static void main(String[] args) {
 		System.out.println("Starting Server");
-		Ciao service = new CiaoImpl();
-		String address = "http://localhost:9000/ciao";
+		Rubrica service = new RubricaImpl();
+		String address = "http://localhost:9000/Rubrica";
 		Endpoint.publish(address, service);
 	}
 }
